@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        var isIE = false || !!document.documentMode;
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        if (isIE) {
+            script.src = 'js/script-ie.js';
+            document.getElementsByTagName('head')[0].appendChild(script);
+        } else {
+            script.src = 'js/script.js';
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Vltava Labe Press</h1>
+        <div class="search-bar">
+            <input onkeyup="MySearch.search()" type="text">
+            <div>
+                <ul class="list">
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="type1"></div>
+            <div class="type2"></div>
+            <div class="type1"></div>
+            <div class="type3 height-2"></div>
+            <div class="type2"></div>
+            <div class="type3 width-2"></div>
+        </div>
+
+    </main>
+</body>
+
+</html>
